@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="InetBankingV1">
+    <listeners>
+        <listener class-name="com.banking.testUtilities.Reporting"></listener>
+    </listeners>
+    <test name="BankingApp Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.banking.testCases.TC_loginTestCase_001">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+<!--            <class name="com.banking.testCases.TC_LoginWith_DDT">-->
+<!--                <methods>-->
+<!--                    <include name="loginWithDDT"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>
